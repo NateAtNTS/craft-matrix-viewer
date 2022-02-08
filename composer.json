@@ -1,0 +1,33 @@
+{
+  "name": "nateatnts/craft-matrix-viewer",
+  "description": "A simple way to visualize all the Matrix on CraftCMS",
+  "type": "craft-plugin",
+  "version": "0.0.2",
+  "keywords": ["CraftCMS", "Matrix", "Visualization"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nate Bate",
+      "homepage": "https://nathanbate.com"
+    }
+  ],
+  "require": {
+    "craftcms/cms": "^3.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "nateatnts\\craftmatrixviewer\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Matrix Viewer",
+    "handle": "matrix-viewer",
+    "class" : "nateatnts\\craftmatrixviewer\\MatrixViewer"
+  },
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  }
+}
